@@ -4,19 +4,16 @@ import React, {useState} from 'react';
 const TextForm = (props) => {
 
     const handleOnChange = (event)=> {
-        console.log("On Change");
         setText(event.target.value);
     }
     
     const handleUpClick = ()=> {
-        console.log("Uppercase Transformed" + text);
         let newText = text.toUpperCase();
         setText(newText);
         props.showAlert("Converted to Uppercase!", "success");
     }
     
     const handleLoClick = ()=> {
-        console.log("Lowercase Transformed" + text);
         let newText = text.toLowerCase();
         setText(newText);
         props.showAlert("Converted to Lowercase!", "success");
