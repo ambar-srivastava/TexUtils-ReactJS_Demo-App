@@ -48,8 +48,8 @@ const TextForm = (props) => {
                 <div className="mb-3">
                     <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark'?'#191919':'white', color: props.mode === 'dark'?'white':'black'}} id="myBox" rows="5"></textarea>
                 </div>
-                <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
                 <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+                <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
                 <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleClearText}>Clear Text</button>
                 <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleCopy}>Copy Text</button>
                 <button disabled={text.length===0} className="btn btn-primary btn-sm mx-2 my-1" onClick={handleExtraSpaces}>Remove Extra Space</button>
